@@ -1,0 +1,70 @@
+---
+description: "Project Specific Rules for Sermon Summarizer"
+alwaysApply: true
+priority: 100
+---
+# Sermon Summarizer - Cursor AI Rules
+
+## Project Context
+This is a Python CLI tool for processing church sermons from YouTube into structured markdown summaries.
+
+## Code Style & Standards
+- Follow PEP 8 strictly
+- Use type hints for all functions and methods
+- Prefer pathlib over os.path
+- Use dataclasses/Pydantic models for data structures
+- Implement proper error handling with custom exceptions
+- Write docstrings in Google style
+- Use logging instead of print statements
+
+## Architecture Principles
+- Single Responsibility Principle - each module has one clear purpose
+- Dependency Injection - services should be injectable for testing
+- Configuration-driven - use YAML/environment variables
+- Async where beneficial (file I/O, API calls)
+- Proper resource cleanup (context managers)
+
+## File Organization
+- Business logic in src/sermon_summarizer/services/
+- Data models in src/sermon_summarizer/models/
+- Configuration in src/sermon_summarizer/config/
+- Utilities in src/sermon_summarizer/utils/
+- Tests mirror source structure
+
+## Error Handling
+- Create custom exception hierarchy
+- Use try/except blocks for external API calls
+- Validate inputs early with Pydantic
+- Log errors with appropriate levels
+- Graceful degradation where possible
+
+## Testing Requirements
+- Unit tests for all services
+- Mock external dependencies (YouTube, Whisper API, AI APIs)
+- Test both success and failure scenarios
+- Use pytest fixtures for common test data
+- Aim for >80% code coverage
+
+## Dependencies
+- Prefer well-maintained packages
+- Pin major versions in requirements.txt
+- Use virtual environments
+- Document why each dependency is needed
+
+## Security
+- Never commit API keys or credentials
+- Use environment variables for sensitive data
+- Validate all external inputs
+- Sanitize file names and paths
+
+## Performance
+- Process audio files in chunks for large files
+- Implement progress indicators for long operations
+- Cache API responses where appropriate
+- Clean up temporary files
+
+## AI Integration Guidelines
+- Make AI provider configurable (OpenAI, local models, etc.)
+- Include retry logic for API failures
+- Implement rate limiting
+- Provide fallback options if AI services fail
