@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/sermon_summarizer.egg-info/PKG-INFO
+src/sermon_summarizer.egg-info/SOURCES.txt
+src/sermon_summarizer.egg-info/dependency_links.txt
+src/sermon_summarizer.egg-info/entry_points.txt
+src/sermon_summarizer.egg-info/requires.txt
+src/sermon_summarizer.egg-info/top_level.txt

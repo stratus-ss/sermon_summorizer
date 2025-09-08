@@ -1,0 +1,2 @@
+[console_scripts]
+sermon-summarizer = sermon_summarizer.cli:main

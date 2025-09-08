@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: sermon-summarizer
+Version: 0.1.0
+Summary: Automated pipeline to download, process, transcribe, and format church sermons from YouTube into structured markdown
+Author-email: Sermon Summarizer Team <team@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/sermon-summarizer
+Project-URL: Bug Tracker, https://github.com/yourusername/sermon-summarizer/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yt-dlp>=2024.1.0
+Requires-Dist: pydub>=0.25.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: pydantic-settings>=2.1.0
+Requires-Dist: click>=8.1.0
+Requires-Dist: pathlib2>=2.3.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: tenacity>=8.2.0
+Provides-Extra: dev
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.10.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: factory-boy>=3.3.0; extra == "dev"
+Requires-Dist: hypothesis>=6.0.0; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-mock>=3.10.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
+Requires-Dist: factory-boy>=3.3.0; extra == "test"
+Requires-Dist: hypothesis>=6.0.0; extra == "test"
+Requires-Dist: PyYAML>=6.0; extra == "test"
+Dynamic: license-file
