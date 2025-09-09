@@ -1,0 +1,11 @@
+yt-dlp
+pydub
+requests
+urllib3
+pydantic
+pydantic-settings
+click
+pathlib2
+PyYAML
+openai
+tenacity
